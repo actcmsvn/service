@@ -1,0 +1,27 @@
+{
+    "name": "actcmsvn/service",
+    "description": "Nhà cung cấp dịch vụ cơ bản cho ứng dụng ACTSMS",
+    "type": "library",
+    "homepage": "https://actcms.io.vn",
+    "authors": [
+        {
+            "name": "ACTCMS Vietnam",
+            "email": "info@actcms.io.vn"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "ACTCMS\\Service\\": "src/"
+        },
+        "files": ["helpers/helper.php"]
+    },
+    "minimum-stability": "stable",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ACTCMS\\Service\\SpondonItServiceProvider"
+            ]
+        }
+    }
+}
